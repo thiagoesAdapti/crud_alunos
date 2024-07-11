@@ -58,38 +58,41 @@ $row = $result->fetch_assoc();
 
 <body>
     <div class="container mt-5">
-        <h2>Editar Aluno</h2>
-        <form method="POST">
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" name="nome" class="form-control" value="<?php echo $row['nome']; ?>" required>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" value="<?php echo $row['email']; ?>" required>
-            </div>
-            <div class="form-group">
-                <label>Telefone</label>
-                <input type="text" name="telefone" class="form-control" value="<?php echo $row['telefone']; ?>">
-            </div>
-            <div class="form-group">
-                <label>Valor Mensalidade</label>
-                <input type="number" step="0.01" name="valor_mensalidade" class="form-control" value="<?php echo $row['valor_mensalidade']; ?>">
-            </div>
-            <div class="form-group">
-                <label>Senha (deixe em branco para não alterar)</label>
-                <input type="password" name="senha" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Ativo</label>
-                <input type="checkbox" name="situacao" <?php echo $row['situacao'] ? 'checked' : ''; ?>>
-            </div>
-            <div class="form-group">
-                <label>Observação</label>
-                <textarea name="observacao" class="form-control"><?php echo $row['observacao']; ?></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-        </form>
+        <a href="index.php" class="btn btn-secondary">Voltar</a>
+        <div class="mt-3">
+            <h2>Editar Aluno</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="nome" class="form-control" value="<?php echo $row['nome']; ?>" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" value="<?php echo $row['email']; ?>" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" class="form-control" value="<?php echo $row['telefone']; ?>">
+                </div>
+                <div class="form-group">
+                    <label>Valor Mensalidade</label>
+                    <input type="number" step="0.01" name="valor_mensalidade" class="form-control" value="<?php echo $row['valor_mensalidade']; ?>">
+                </div>
+                <div class="form-group">
+                    <label>Senha (deixe em branco para não alterar)</label>
+                    <input type="password" name="senha" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Ativo</label>
+                    <input type="checkbox" name="situacao" <?php echo $row['situacao'] ? 'checked' : ''; ?>>
+                </div>
+                <div class="form-group">
+                    <label>Observação</label>
+                    <textarea name="observacao" class="form-control"><?php echo $row['observacao']; ?></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 mb-2">Salvar</button>
+            </form>
+        </div>
     </div>
 </body>
 

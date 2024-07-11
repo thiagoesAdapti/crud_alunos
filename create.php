@@ -36,38 +36,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <div class="container mt-5">
-        <h2>Cadastrar Aluno</h2>
-        <form method="POST">
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" name="nome" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label>Telefone</label>
-                <input type="text" name="telefone" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Valor Mensalidade</label>
-                <input type="number" step="0.01" name="valor_mensalidade" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Senha</label>
-                <input type="password" name="senha" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label>Ativo</label>
-                <input type="checkbox" name="situacao">
-            </div>
-            <div class="form-group">
-                <label>Observação</label>
-                <textarea name="observacao" class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Salvar</button>
-        </form>
+        <a href="index.php" class="btn btn-secondary">Voltar</a>
+        <div class="mt-3">
+            <h2>Cadastrar Aluno</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Valor Mensalidade</label>
+                    <input type="number" step="0.01" name="valor_mensalidade" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" name="senha" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Ativo</label>
+                    <input type="checkbox" name="situacao">
+                </div>
+                <div class="form-group">
+                    <label>Observação</label>
+                    <textarea name="observacao" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-3 mb-2">Salvar</button>
+            </form>
+        </div>
     </div>
 </body>
 
