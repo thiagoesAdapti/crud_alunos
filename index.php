@@ -14,13 +14,13 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>CRUD Alunos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container mt-5">
         <h2>Lista de Alunos</h2>
-        <a href="create.php" class="btn btn-success mb-2">Cadastrar Novo Aluno</a>
+        <a href="create.php" class="btn btn-success mb-2">Cadastrar Aluno</a>
         <table class="table table-bordered">
             <thead>
                 <tr>
